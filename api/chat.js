@@ -65,7 +65,7 @@ export default async function handler(req, res) {
           role: msg.role === 'user' ? 'user' : 'assistant',
           content: msg.content
         })),
-        max_tokens: 1024,
+        max_tokens: 4000,
         system: "Bạn là chuyên gia lập trình cấp cao, luôn trả lời ngắn gọn, đúng bản chất và trọng tâm bằng tiếng Việt."
       };
     } else {
